@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpringBoard Academy</title>
+    <meta name="author" content="Vijendra Shekhawat" />
+    <meta
+      name="description"
+      content="This is website related to Spring Board Academy ( RAS Factory ) Jaipur"
+    />
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+    <link rel="icon" href="./img/springboard.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Spring Board Academy</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        Please fill out this, our executive will contact you within 24 hours
+      </p>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="firstname">FirstName: </label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              required
+              placeholder="your first name"
+            />
+          </p>
+
+          <p>
+            <label for="lastname">LastName: </label>
+            <input type="text" name="lastname" id="lastname" required />
+          </p>
+
+          <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+          </p>
+
+          <p>
+            <label for="mobile">Mobile: </label>
+            <input
+              type="tel"
+              name="mobile"
+              id="mobile"
+              required
+              placeholder="your mobile no."
+              pattern="[7-9]{1}[0-9]{9}"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Information</legend>
+
+          <p>
+            <input type="radio" name="course" id="si" value="si" />
+            <label for="si">SI</label>
+          </p>
+
+          <p>
+            <input type="radio" name="course" id="ras" value="ras" />
+            <label for="ras">RAS</label>
+          </p>
+
+          <p>
+            <input type="radio" name="course" id="ias" value="ias" />
+            <label for="ias">IAS</label>
+          </p>
+
+          <p>
+            Choose course type: 
+         <p>
+            <input type="checkbox" name="course-type" id="online" value="online">
+            <label for="online">Online</label>
+         </p>
+         <p>
+            <input type="checkbox" name="course-type" id="offline" value="offline">
+            <label for="offline">Offline</label>
+         </p>
+         <p>
+            <input type="checkbox" name="course-type" id="integrated " value="integrated ">
+            <label for="integrated ">Integrated </label>
+         </p>
+        </p>
+
+        <p>
+            <label for="years">Years: </label>
+            <select name="years" id="years">
+                <option value="1">1 year pre+mains</option>
+                <option value="2">2 years pre + mains</option>
+                <option value="3">3 year foundation</option>
+
+            </select>
+        </p>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy;SpringBoard Academy, Jaipur</p>
+    </footer>
+  </body>
+</html>
