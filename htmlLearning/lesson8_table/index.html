@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vijendra Shekhawat" />
+    <meta
+      name="description"
+      content="This is all about
+       Semantics 
+    "
+    />
+    <link rel="icon" href="./meta.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My priotized items</h1>
+      <nav aria-label="primary-navigation">
+        <!-- <h2 id="primary-navigation">Primary Navigation</h2> -->
+        <ul>
+          <li><a href="#html">Learn Html</a></li>
+          <li><a href="#vacation">vacations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h2>This is webpage with text elements</h2>
+      <p>here we discuss about h1,h2 <br />.... and other tags</p>
+
+      <hr />
+      <article id="html">
+        <h2>Learning Web development</h2>
+        <section>
+          <h3>development learning</h3>
+          <img
+            src="./img/developer.jfif"
+            alt="developer image"
+            title="I'm learning web-development"
+          />
+
+          <figure>
+            <img
+              src="https://loremflickr.com/250/200"
+              alt="this is random image"
+            />
+            <figcaption>This is beach image</figcaption>
+          </figure>
+          <p>let me tell you how i am doing :</p>
+        </section>
+
+        <section>
+          <h3>Code Example</h3>
+          <figure>
+            <figcaption>An example of html5 code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+          <ol>
+            <li>Watch Dave Gray tutorials</li>
+            <li>
+              Use
+              <abbr title="Mozzila developer network">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  >MDN</a
+                >
+              </abbr>
+              and practice
+            </li>
+            <li>Read any good tutorials</li>
+          </ol>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> no of hours</mark> I code per day
+              </summary>
+              <p>
+                I start at <time datetime="08:00">8 am </time> and i write code
+                for <time datetime="PT3H">3 hours</time> every morning
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+            <tr>
+              <th>&nbsp;#</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8 am</time>
+                -
+                <time datetime="11:00">11 am</time>
+              </td>
+              <td>Code</td>
+            </tr>
+            <tr>
+              <th scope="row">break</th>
+              <td>
+                <time datetime="11:00">11 am</time>
+                -
+                <time datetime="12:00">12 am</time>
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">evening</th>
+              <td>
+                <time datetime="12:00">12 pm</time>
+                -
+                <time datetime="17:00">5 pm</time>
+              </td>
+              <td>Study for other courses</td>
+            </tr>
+           
+            <tr>
+              <th rowspan="3" scope="row">break</th>
+              <td colspan="2">Free time</td>
+            </tr>
+            <tr>
+             
+              <td rowspan="2">All other time</td>
+              <td>Enjoy</td>
+            </tr>
+            <tr>
+             
+              <td >Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+          
+            <tr>
+              <th scope="row">Tag Line</th>
+              <td colspan="2">And that's what i do 5 days a week. Eat, sleep, code ... and recharge!!</td>
+            </tr>
+          </tfoot>
+          </table>
+        </section>
+      </article>
+
+      <hr />
+
+      <article id="vacation">
+        <h2>I am also planning a vacation</h2>
+        <img src="./img/park.jfif" alt="park vacation image" />
+        <p>I've been working hard and <em> really need a getway</em></p>
+        <p>I want to visit any nearby beach</p>
+        <img src="./img/beach.jfif" alt="beach image" loading="lazy" />
+        <hr />
+
+        <section>
+          <h3>Places i would like to visit</h3>
+          <ul>
+            <li>
+              <p>
+                I have heard of
+                <abbr
+                  title="city which joins india and shreelanka and where bhagawan ram made bridge "
+                  >rameswaram</abbr
+                >
+                and wanna go there
+              </p>
+            </li>
+
+            <!-- this is address tag which provides semantic meaning -->
+            <li>
+              <p>My home town</p>
+              <address>
+                Kumas Jagir
+                <br />Necchhwa Sikar <br />Rajasthan
+              </address>
+              <figure>
+                <img src="img/park.jfif" alt="park image" loading="lazy" />
+                <figcaption>Park photo where i am going</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Placess i want to avoid</h3>
+          <dl>
+            <dt>North Pole</dt>
+            <dd>I hear this is <strong>Cold!!</strong></dd>
+            <dt>South Pole</dt>
+            <dd>this is also <strong>Cold!!</strong></dd>
+          </dl>
+        </section>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      <p>&lt;&lt;&copy; <a href="./about.html">Vijendra</a> &gt;&gt;</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+  </body>
+</html>

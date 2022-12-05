@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vijendra Shekhawat" />
+    <meta
+      name="description"
+      content="This is all about
+       forms  
+    "
+    />
+    <link rel="icon" href="./meta.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./main.css" type="text/css" />
+  </head>
+
+  <body>
+    <article id="contact">
+      <h2>Contace Me</h2>
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+
+          <legend>Personal Information</legend>
+        <p>
+        <!--for should match with id-->
+        <label for="firstname">First Name: </label>
+        <input type="text" 
+        name="firstname" 
+        id="firstname"
+        placeholder="Vij"
+        autocomplete="on"
+        required
+        autofocus
+        >
+      </p>
+
+      <p>
+    
+        <label for="lastname">Last Name: </label>
+        <input type="text" 
+        name="lastname" 
+        id="lastname"
+        placeholder="shekhawat"
+        required
+        >
+      </p>
+      <p>
+    
+        <label for="password">Password: </label>
+        <input type="password" 
+        name="password" 
+        id="password"
+        placeholder="secret"
+        required
+        >
+      </p>
+
+      <p>
+    
+        <label for="phone">phone: </label>
+        <input type="tel" 
+        name="phone" 
+        id="phone"
+        placeholder="9999999999"
+        required
+        pattern="[1-9]{1}[0-9]{9}"
+        >
+      </p>
+
+      <p>
+    
+        <label for="decade">Favorite decade: </label>
+        <input type="number" 
+        name="decade" 
+        id="decade"
+        required
+        min="1980"
+        max="2050"
+        step="10"
+        value="2000"
+        >
+      </p>
+
+      <p>
+
+        <label for="food">Favorite Food: </label>
+        <select name="food" id="food" multiple size="5">
+          <optgroup label="rajasthani-food">
+          <option value="roti">Roti</option>
+          <option value="dahi">Dahi</option>
+        </optgroup>
+        
+          <option value="pizza" selected>Pizza</option>
+          <option value="sweets">Sweets</option>
+          <optgroup label="non-veg">
+          <option value="sea-food">Sea-Food</option>
+          <option value="chicken">chicken</option>
+        </optgroup>
+          <option value="others">Other</option>
+        </select>
+
+      </p>
+
+
+      <!-- <p>
+
+         <label for="food">Favorite Food: </label>
+         <input type="text" name="food" id="food" list="food-list">
+         <datalist id="food-list">
+
+          <option value="bread">
+          <option value="pakoda">
+          <option value="bhaji">
+          <option value="sea-food">
+
+         </datalist>
+
+      </p> -->
+
+    </fieldset>
+    <br>
+    <fieldset>
+
+      <legend>What is your favorite drink? </legend>
+
+      <p>
+        <input type="radio" name="drink" id="bear" value="bear">
+        <label for="bear">Bear</label>
+      </p>
+      <p>
+        <input type="radio" name="drink" id="mazza" value="mazza">
+        <label for="mazza">Mazza</label>
+      </p>
+      <p>
+        <input type="radio" name="drink" id="wine" value="wine">
+        <label for="wine">Wine</label>
+      </p>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>Do you have pets ? </legend>
+      <p>
+        <input type="checkbox" name="pets" id="dog" value="dog">
+        <label for="dog">Dog</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="cat" value="cat">
+        <label for="cat">Cat</label>
+      </p>
+      <p>
+        <input type="checkbox" name="pets" id="cow" value="cow">
+        <label for="cow">Cow</label>
+      </p>
+    </fieldset>
+
+    <br>
+    <fieldset>
+      <legend>Send Me a Note</legend>
+      <label for="message">Your Message : </label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </fieldset>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+    <button type="reset">Reset</button>
+      </form>
+    </article>
+  </body>
+</html>
