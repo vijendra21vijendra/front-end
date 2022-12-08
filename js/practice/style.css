@@ -1,0 +1,22 @@
+body{
+    font-size: 24px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+
+}
+
+div{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #333;
+}
